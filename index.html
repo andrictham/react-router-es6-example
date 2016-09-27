@@ -1,8 +1,10 @@
 <!-- https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm -->
 
 <!DOCTYPE html>
+
 <html>
 <head>
+  <meta charset="UTF-8"></meta>
   <script src="https://npmcdn.com/react@15.3.0/dist/react.js"></script>
   <script src="https://npmcdn.com/react-dom@15.3.0/dist/react-dom.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
@@ -35,16 +37,31 @@
               <li>Contact</li>
             </ul>
             <div className="content">
-
+              <Home />
             </div>
           </div>
         )
       }
     });
 
+    var Home = React.createClass({
+      render: function() {
+        return (
+          <div>
+            <h2>Hello there, stranger.</h2>
+            <p>What d’ya want?</p>
+            <p>The owls are not what they seem.</p>
+          </div>
+        )
+      }
+    });
 
     ReactDOM.render(
-      <App />,
+      <ReactRouter.Router>
+        <ReactRouter.Route path="/" component={App}>
+
+        </ReactRouter.Route>
+      </ReactRouter.Router>,
       destination
     );
 
