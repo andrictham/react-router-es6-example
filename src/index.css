@@ -38,6 +38,10 @@
     display: inline-block;
   }
 
+  .active {
+    background-color: #0099FF;
+  }
+
   .content {
     background-color: #FFF;
     padding: 20px;
@@ -59,6 +63,6 @@
     padding-bottom: 3px;
   }
 
-  .content a:after {
+  .content h3 a:after {
     content:' ⬇'
   }
