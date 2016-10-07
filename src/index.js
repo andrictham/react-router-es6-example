@@ -41,7 +41,7 @@ var Stuff = React.createClass({
       <div>
         <h2>Stuff</h2>
         <p>Isn’t the world a wonderful place?</p>
-        <p>Oh, if only I had more money! 💵 Then I could buy myself thse nice things:</p>
+        <p>Oh, if only I had more money! 💵 &nbsp;Then I could buy myself thse nice things:</p>
         <ol>
           <li>A Tesla</li>
           <li>That black <em>black</em> iPhone 7</li>
@@ -67,7 +67,9 @@ var Contact = React.createClass({
 ReactDOM.render(
   <Router>
     <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
+      <IndexRoute component={Home} />
+      <Route path="stuff" component={Stuff} />
+      <Route path="contact" component={Contact} />
     </Route>
   </Router>,
   destination
