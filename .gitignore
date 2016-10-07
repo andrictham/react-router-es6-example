@@ -2,3 +2,5 @@ node_modules
 .DS_Store
 
 src/old
+
+npm-debug.log
