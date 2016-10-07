@@ -48,6 +48,18 @@ var Stuff = React.createClass({
           <li>A holiday villa in Big Sur</li>
           <li>A private island in the Pacific Ocean</li>
         </ol>
+        <h3> <Link to="/stuff/i-want">What more can a man want?</Link> </h3>
+        <div>{this.props.children}</div>
+      </div>
+    );
+  }
+});
+
+var StuffIWant = React.createClass({
+  render: function(){
+    return(
+      <div>
+        <p>Nothing. Nothing at all.</p>
       </div>
     );
   }
@@ -68,7 +80,9 @@ ReactDOM.render(
   <Router>
     <Route path="/" component={App}>
       <IndexRoute component={Home} />
-      <Route path="stuff" component={Stuff} />
+      <Route path="stuff" component={Stuff}>
+        <Route path="i-want" component={StuffIWant} />
+      </Route>
       <Route path="contact" component={Contact} />
     </Route>
   </Router>,
