@@ -53,6 +53,17 @@ var Stuff = React.createClass({
   }
 });
 
+var Contact = React.createClass({
+  render: function(){
+    return(
+      <div>
+        <h2>Got a fucking problem?</h2>
+        <p>The <em>eaaasiest</em> thing to do would be to tweet me at <a href="https://twitter.com/realDonaldTrump">@realDonaldTrump</a>.</p>
+      </div>
+    );
+  }
+});
+
 ReactDOM.render(
   <Router>
     <Route path="/" component={App}>
