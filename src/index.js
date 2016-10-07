@@ -35,6 +35,24 @@ var Home = React.createClass({
   }
 });
 
+var Stuff = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <h2>Stuff</h2>
+        <p>Isn’t the world a wonderful place?</p>
+        <p>Oh, if only I had more money! 💵 Then I could buy myself thse nice things:</p>
+        <ol>
+          <li>A Tesla</li>
+          <li>That black <em>black</em> iPhone 7</li>
+          <li>A holiday villa in Big Sur</li>
+          <li>A private island in the Pacific Ocean</li>
+        </ol>
+      </div>
+    );
+  }
+});
+
 ReactDOM.render(
   <Router>
     <Route path="/" component={App}>
