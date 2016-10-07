@@ -12,7 +12,7 @@ class App extends Component{
   render() {
     return (
       <div>
-        <h1>My Homepage</h1>
+        <h1>Create React App + React Router in ES6 Example</h1>
         <ul className="header">
           <li> <IndexLink to="/" activeClassName="active"> Home </IndexLink> </li>
           <li> <Link to="/stuff" activeClassName="active"> Stuff </Link> </li>
