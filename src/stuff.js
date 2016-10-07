@@ -7,14 +7,14 @@ class Stuff extends Component {
       <div>
         <h2>Stuff</h2>
         <p>Isn’t the world a wonderful place?</p>
-        <p>Oh, if only I had more money! 💵 &nbsp;Then I could buy myself thse nice things:</p>
+        <p>Oh, if only I had more money! 💵 &nbsp;Then I could buy myself these nice things:</p>
         <ol>
           <li>A Tesla</li>
           <li>That black <em>black</em> iPhone 7</li>
           <li>A holiday villa in Big Sur</li>
           <li>A private island in the Pacific Ocean</li>
         </ol>
-        <h3> <Link to="/stuff/i-want" activeClassName="active">What more can a man want?</Link> </h3>
+        <h3 className="link-expand"> <Link to="/stuff/i-want" activeClassName="active">What more can a man want?</Link> </h3>
         <div>{this.props.children}</div>
       </div>
     );

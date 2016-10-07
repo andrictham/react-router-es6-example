@@ -93,10 +93,19 @@ ul.header li a.active {
   border-bottom: 2px solid #FF6C6C;
 }
 
-.content h3 a:after {
+.content .link-expand a:after {
   content:' ➡'
 }
 
-.content h3 a.active:after {
-  content:' ⬇'
+.content .link-expand a.active {
+  border: 0;
+}
+
+.content .link-expand a.active:hover {
+  color: currentColor;
+  cursor: default;
+}
+
+.content .link-expand a.active:after {
+  content:'';
 }
