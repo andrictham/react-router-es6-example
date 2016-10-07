@@ -48,7 +48,7 @@ var Stuff = React.createClass({
           <li>A holiday villa in Big Sur</li>
           <li>A private island in the Pacific Ocean</li>
         </ol>
-        <h3> <Link to="/stuff/i-want">What more can a man want?</Link> </h3>
+        <h3> <Link to="/stuff/i-want" activeClassName="active">What more can a man want?</Link> </h3>
         <div>{this.props.children}</div>
       </div>
     );

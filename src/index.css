@@ -38,7 +38,7 @@
     display: inline-block;
   }
 
-  .active {
+  ul.header li a.active {
     background-color: #0099FF;
   }
 
@@ -61,8 +61,20 @@
     color: currentColor; /* Strips browser-default blue */
     border-bottom: 2px solid currentColor;
     padding-bottom: 3px;
+    -webkit-transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    transition:         all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .content a:hover {
+    transform: scale(1.1);
+    padding-bottom: 6px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2)
   }
 
   .content h3 a:after {
+    content:' ➡'
+  }
+
+  .content h3 a.active:after {
     content:' ⬇'
   }
