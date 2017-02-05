@@ -2,7 +2,7 @@
 
 Following along with this tutorial from [Kirupa](https://www.kirupa.com/react/creating_single_page_app_react_using_react_router.htm)
 
-[Demo Link](http://andrictham.com/react-router-kirupa/)
+[Demo Link](http://andrictham.com/react-router-es6-example)
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
